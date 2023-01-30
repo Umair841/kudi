@@ -5,7 +5,7 @@ phases:
     commands:
       - echo Logging in to Amazon ECR...
       - $(aws ecr get-login --region $AWS_DEFAULT_REGION --no-include-email)
-      - REPOSITORY_URI=$REPOSITORY_URI
+      - REPOSITORY_URI=489994096722.dkr.ecr.us-east-1.amazonaws.com/ammar
   build:
     commands:
       - echo Build started on `date`
