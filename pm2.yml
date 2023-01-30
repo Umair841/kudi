@@ -1,0 +1,11 @@
+apps:
+  - script   : ./src/server.ts
+    name     : 'kudi-api'
+    instances: 1
+    exec_mode: cluster
+    interpreter: ts-node
+    watch: true
+    env:
+      NODE_ENV: development
+    env_production:
+      NODE_ENV: production

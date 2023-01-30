@@ -1,0 +1,33 @@
+export enum TRANSFER_STATUS {
+    STARTED = 'STARTED',
+    ONGOING = 'ONGOING',
+    SENT = 'SENT',
+    WITHDRAWN = 'WITHDRAWN',
+}
+
+export enum OPERATION_TYPE {
+    DEPOSIT = 'DEPOSIT',
+    WITHDRAW = 'WITHDRAW',
+    SENDING_TRANSFER = 'SENDING_TRANSFER',
+    RECEIVING_TRANSFER = 'RECEIVING_TRANSFER',
+}
+
+export enum OPERATION_STATUS {
+    STARTED = 'STARTED',
+    DONE = 'DONE',
+    NOT_DONE = 'NOT_DONE',
+}
+
+export enum COMMISSION_STATUS {
+    FREE = "FREE",
+    CHARGED = "CHARGED",
+    NOT_CHARGED = "NOT_CHARGED"
+}
+
+export enum USER_ROLE {
+    USER = "USER",
+    MERCHANT = "MERCHANT",
+    ADMIN = "ADMIN",
+    DEV = "DEV",
+    ROOT = "ROOT"
+}

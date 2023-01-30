@@ -1,0 +1,15 @@
+{
+  "apps": [
+    {
+      "name": "kudi-api",
+      "exec_mode": "cluster",
+      "script": "./src/server.ts",
+      "watch": true,
+      "interpreter": "ts-node",
+      "env": {
+        "port": 3900,
+        "NODE_ENV": "production"
+      }
+    }
+  ]
+}
