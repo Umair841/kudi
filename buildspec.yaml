@@ -15,9 +15,9 @@ phases:
     commands:
       - echo we are in post_build now.
       - docker push $REPOSITORY_URI:latest
-      - printf '[{"name":"kudi","imageUri":"%s"}]' $REPOSITORY_URI:latest > imagedefinition.json
+      - printf '[{"name":"kudi","imageUri":"%s"}]' $REPOSITORY_URI:latest > imagedefinitions.json
 artifacts:
   files:
-    - imagedefination.json
+    - imagedefinitions.json
     - taskdef.json
     - '**/*'
