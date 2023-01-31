@@ -21,6 +21,8 @@ ENV MONGO_PORT 27017
 ENV MONGO_DATABASE kudi_db
 ENV SENDGRID_API_KEY my-api-key
 
+# testing new release
+
 EXPOSE 3900
 
 CMD ["pm2-runtime", "pm2.json"]
