@@ -1,4 +1,4 @@
-FROM node:18.12.1-alpine
+FROM 489994096722.dkr.ecr.us-east-1.amazonaws.com/ammar-k:latest
 
 COPY . ./app
 
