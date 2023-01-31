@@ -13,6 +13,14 @@ RUN npm install -D ts-node
 
 RUN pm2 install typescript
 
+# Temporary variables: @TODO Add the real variables in a conf fily for only deployment
+ENV PORT 3900
+ENV JWT_SECRET jwt_secret
+ENV MONGO_HOST mongodb
+ENV MONGO_PORT 27017
+ENV MONGO_DATABASE kudi_db
+ENV SENDGRID_API_KEY my-api-key
+
 EXPOSE 3900
 
 CMD ["pm2-runtime", "pm2.json"]
